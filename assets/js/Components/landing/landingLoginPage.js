@@ -1,0 +1,31 @@
+import { clearContainer } from "../other/clearContainer.js";
+
+const app = document.getElementById("app");
+
+export const buildLandingLoginView = () => {
+  clearContainer(app);
+
+  let landingView = `
+    <div class="landing-login">
+        <header class="landing-header">
+            <h2>Cloud Music</h2>
+        </header>
+
+        <span class="about-text">
+            <header>
+                <hgroup>
+                    <h3>Hear Music that you love</h3>
+                    <h3>Discover new artists</h3>
+                </hgroup>
+            </header>
+        </span>
+
+        <span class="btn-container">
+            <button id="create-account">Create an account</button>
+            <button id="login-account">Login</button>
+            <button id="anonymous-account">Continue anonymously</button>
+        </span>
+    </div>`;
+
+  app.innerHTML += landingView;
+};
