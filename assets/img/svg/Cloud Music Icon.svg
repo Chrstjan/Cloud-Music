@@ -1,0 +1,15 @@
+<svg width="241" height="125" viewBox="0 0 241 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="46" cy="72" r="46" fill="white"/>
+<ellipse cx="164.5" cy="63" rx="47.5" ry="46" fill="white"/>
+<ellipse cx="107" cy="59" rx="44" ry="42" fill="white"/>
+<ellipse cx="196" cy="81.5" rx="45" ry="43.5" fill="white"/>
+<ellipse cx="74.5" cy="31.5" rx="34.5" ry="31.5" fill="white"/>
+<ellipse cx="80.5" cy="93.5" rx="34.5" ry="31.5" fill="white"/>
+<ellipse cx="161.5" cy="90.5" rx="34.5" ry="31.5" fill="white"/>
+<ellipse cx="126.5" cy="31.5" rx="34.5" ry="31.5" fill="white"/>
+<ellipse cx="185.5" cy="57.5" rx="34.5" ry="31.5" fill="white"/>
+<rect x="31" y="72" width="190" height="42" fill="white"/>
+<rect x="75" y="67.8726" width="29.6884" height="32.1274" rx="12" fill="#D9D9D9" stroke="black" stroke-width="8"/>
+<rect x="137.312" y="67.8726" width="29.6884" height="32.1274" rx="12" fill="#D9D9D9" stroke="black" stroke-width="8"/>
+<path d="M90.0955 65.4777V52.4121C90.0955 34.5114 104.607 20 122.508 20V20C140.408 20 154.92 34.5114 154.92 52.412V65.4777" stroke="black" stroke-width="8"/>
+</svg>

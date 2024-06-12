@@ -2,3 +2,14 @@
 @use "../../helpers/mixins";
 @use "../../helpers/placeholders";
 @use "../../fonts/fonts";
+
+.landing-login {
+  //   @include mixins.backgroundImage(
+  //     "./assets/img/Sound Cloud Background.jpg",
+  //     cover,
+  //     no-repeat,
+  //     center
+  //   );
+  background-image: url("../../../img/Sound-Cloud-Background.jpg");
+  background-size: cover;
+}

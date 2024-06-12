@@ -8,6 +8,7 @@ export const buildLandingLoginView = () => {
   let landingView = `
     <div class="landing-login">
         <header class="landing-header">
+            <img src="./assets/img/svg/Cloud Music Icon.svg" alt="Cloud Music Logo" />
             <h2>Cloud Music</h2>
         </header>
 
