@@ -1,3 +1,3 @@
-# Js-Boilerplate-3.0
-Boilerplate 4.0
-Pages:
+# Cloud Music
+A clone of SoundCloud with copyright free music samples used from https://freetouse.com/music
+- Pages:
