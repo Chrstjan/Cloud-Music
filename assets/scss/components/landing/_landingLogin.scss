@@ -1,0 +1,78 @@
+@use "../../helpers/variables" as v;
+@use "../../helpers/mixins";
+@use "../../helpers/placeholders" as ph;
+@use "../../fonts/fonts";
+
+.landing-login {
+  position: relative;
+  background-image: url("../../../../assets/img/Sound-Cloud-Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include mixins.flexBox(column, center, center, 0.7rem);
+  height: 100vh;
+  color: v.$main-color-white;
+
+  .landing-header {
+    @include mixins.flexBox(column, center, center, 0.4rem);
+    position: absolute;
+    top: 5%;
+
+    h2 {
+      @include mixins.fontFamily("Bebas Neue", 400, 32px);
+      @include mixins.textShadow(1px, 1px, #000);
+
+      @media (min-width: 1300px) {
+        & {
+          font-size: 2.2vw;
+        }
+      }
+    }
+  }
+
+  .about-text {
+
+    header {
+
+      hgroup {
+        h3 {
+          @include mixins.fontFamily("Manrope", 700, 20px);
+          @include mixins.textShadow(0.5px, 0,5px #000);
+          color: v.$main-color-light-gray;
+          
+
+          @media (min-width: 1300px) {
+            font-size: 1.3vw;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-container {
+    @include mixins.flexBox(column, center, center, 0.8rem);
+    position: absolute;
+    bottom: 5%;
+
+    @media (min-width: 1300px) {
+      bottom: 12%;
+    }
+
+    button {
+      @extend %btn-to-header;
+      @include mixins.fontFamily("Manrope", 400, 20px);
+      color: v.$main-color-white;
+      @include mixins.textShadow(1px, 1px, #000); 
+
+      @media (min-width: 1300px) {
+        font-size: 1.2vw;
+      }
+
+      &:hover {
+        cursor: pointer;
+        scale: 1.2;
+      }
+    }
+  }
+}

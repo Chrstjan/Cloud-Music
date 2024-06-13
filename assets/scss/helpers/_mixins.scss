@@ -1,0 +1,51 @@
+@mixin flexBox(
+  $direction: row,
+  $justify: center,
+  $align: center,
+  $gap: 0.5rem
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin gridWireframe(
+  $colAmount: 1,
+  $colSpace: 1fr,
+  $rowAmount: 1,
+  $rowSpace: 1fr
+) {
+  display: grid;
+  grid-template-columns: repeat($colAmount, $colSpace);
+  grid-template-rows: repeat($rowAmount, $rowSpace);
+}
+
+@mixin backgroundImage(
+  $img,
+  $size: cover,
+  $repeat: no-repeat,
+  $position: center
+) {
+  background-image: url();
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+@mixin fontFamily($fontname, $fontweight, $fontsize: 16px) {
+  font-family: $fontname;
+  font-weight: $fontweight;
+  font-size: $fontsize;
+}
+
+@mixin textShadow($a: 1px, $b: 1px, $color: #000) {
+  text-shadow: $a $b $color;
+}
+
+@mixin positionTop($type: absolute, $top, $left, $x: 0%, $y: 0%) {
+  position: $type;
+  left: $left;
+  transform: translate($x, $y);
+}
