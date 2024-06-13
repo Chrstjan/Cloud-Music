@@ -1,8 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.landing-login .btn-container button {
+  border: 0;
+  background: transparent;
+  text-align: center;
+}
+
 .landing-login {
-  background-image: url("../../../img/Sound-Cloud-Background.jpg");
+  position: relative;
+  background-image: url("../../../../assets/img/Sound-Cloud-Background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  height: 100vh;
+  color: #ffffff;
+}
+.landing-login .landing-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  position: absolute;
+  top: 5%;
+}
+.landing-login .landing-header h2 {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 32px;
+  text-shadow: 1px 1px #000;
+}
+.landing-login .about-text header hgroup h3 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 0.5px 0 5px #000;
+  color: #eeeeee;
+}
+.landing-login .btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  bottom: 5%;
+}
+.landing-login .btn-container button {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px #000;
+}
+.landing-login .btn-container button:hover {
+  cursor: pointer;
+  scale: 1.2;
 }
 
 html {

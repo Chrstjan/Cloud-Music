@@ -34,10 +34,14 @@
   background-position: $position;
 }
 
-@mixin fontFamilty($fontname, $fontweight, $fontsize) {
+@mixin fontFamily($fontname, $fontweight, $fontsize: 16px) {
   font-family: $fontname;
   font-weight: $fontweight;
   font-size: $fontsize;
+}
+
+@mixin textShadow($a: 1px, $b: 1px, $color: #000) {
+  text-shadow: $a $b $color;
 }
 
 @mixin positionTop($type: absolute, $top, $left, $x: 0%, $y: 0%) {
