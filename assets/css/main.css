@@ -46,6 +46,7 @@
   font-size: 20px;
   text-shadow: 0.5px 0 5px #000;
   color: #eeeeee;
+  text-align: center;
 }
 @media (min-width: 1300px) {
   .landing-login .about-text header hgroup h3 {
