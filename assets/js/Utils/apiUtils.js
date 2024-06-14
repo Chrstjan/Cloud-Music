@@ -3,10 +3,9 @@ export const myFetchData = async (endpoint) => {
 
   try {
     response = await fetch(endpoint, {
-      method: 'GET', // or 'POST' if you are sending data
+      method: "GET",
       headers: {
-        'Content-Type': 'application/json',
-        // You can add other headers here if needed
+        "Content-Type": "application/json",
       },
     });
     console.log(response);
