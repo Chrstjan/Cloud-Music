@@ -1,3 +1,3 @@
-import { logMessage } from "./Components/app.js";
+import { initPage } from "./Components/app.js";
 
-logMessage();
+initPage();
