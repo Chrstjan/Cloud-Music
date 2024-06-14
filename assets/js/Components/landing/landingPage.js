@@ -1,3 +1,3 @@
 export const buildLandingPage = () => {
-    console.log("lol");
+    console.log("epic lmao");
 }
