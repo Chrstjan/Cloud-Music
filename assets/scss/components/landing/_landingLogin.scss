@@ -40,6 +40,7 @@
           @include mixins.fontFamily("Manrope", 700, 20px);
           @include mixins.textShadow(0.5px, 0,5px #000);
           color: v.$main-color-light-gray;
+          text-align: center;
           
 
           @media (min-width: 1300px) {
