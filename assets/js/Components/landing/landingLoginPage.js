@@ -2,9 +2,13 @@ import { clearContainer } from "../other/clearContainer.js";
 import { buildLandingPage } from "./landingPage.js";
 
 const app = document.getElementById("app");
+const header = document.querySelector(".main-header");
+const footer = document.querySelector(".main-footer");
 
 export const buildLandingLoginView = () => {
   clearContainer(app);
+  header.classList.add("hide-navigation");
+  footer.classList.add("hide-navigation");
 
   let landingView = `
     <div class="landing-login">
@@ -34,5 +38,5 @@ export const buildLandingLoginView = () => {
   const anonBtn = document.getElementById("anonymous-account");
   anonBtn.addEventListener("click", () => {
     buildLandingPage();
-  })
+  });
 };

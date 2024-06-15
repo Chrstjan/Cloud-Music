@@ -3,6 +3,10 @@
 @use "../helpers/placeholders" as ph;
 @use "../fonts/fonts";
 
+.main-footer.hide-navigation {
+  display: none;
+}
+
 .main-footer {
   @include mixins.flexBox(row, center, center, 0rem);
   background: v.$header-background-color;
