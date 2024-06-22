@@ -1,4 +1,5 @@
 import { clearContainer } from "../other/clearContainer.js";
+import { buildSignup } from "../users/signupUser.js";
 import { buildLandingPage } from "./landingPage.js";
 
 const app = document.getElementById("app");
@@ -34,6 +35,11 @@ export const buildLandingLoginView = () => {
     </div>`;
 
   app.innerHTML += landingView;
+
+  const signupBtn = document.getElementById("create-account");
+  signupBtn.addEventListener("click", () => {
+    buildSignup();
+  });
 
   const anonBtn = document.getElementById("anonymous-account");
   anonBtn.addEventListener("click", () => {
