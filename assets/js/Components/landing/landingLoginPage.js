@@ -37,6 +37,6 @@ export const buildLandingLoginView = () => {
 
   const anonBtn = document.getElementById("anonymous-account");
   anonBtn.addEventListener("click", () => {
-    buildLandingPage();
+    buildLandingPage(); // The data from the api not being send with is the issue here.
   });
 };
