@@ -1,10 +1,15 @@
 import { clearContainer } from "../other/clearContainer.js";
+import { buildSignup } from "../users/signupUser.js";
 import { buildLandingPage } from "./landingPage.js";
 
 const app = document.getElementById("app");
+const header = document.querySelector(".main-header");
+const footer = document.querySelector(".main-footer");
 
 export const buildLandingLoginView = () => {
   clearContainer(app);
+  header.classList.add("hide-navigation");
+  footer.classList.add("hide-navigation");
 
   let landingView = `
     <div class="landing-login">
@@ -31,8 +36,13 @@ export const buildLandingLoginView = () => {
 
   app.innerHTML += landingView;
 
+  const signupBtn = document.getElementById("create-account");
+  signupBtn.addEventListener("click", () => {
+    buildSignup();
+  });
+
   const anonBtn = document.getElementById("anonymous-account");
   anonBtn.addEventListener("click", () => {
-    buildLandingPage();
-  })
+    buildLandingPage(); // The data from the api not being send with is the issue here.
+  });
 };

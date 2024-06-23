@@ -11,12 +11,60 @@
   <body>
     <div class="main-container">
       <header class="main-header">
-        <nav class="main-nav"></nav>
+        <span class="logo-container">
+          <img
+            src="./assets/img/svg/Cloud Music Icon.svg"
+            id="cloud-music-logo"
+            alt="Cloud Sound Logo"
+          />
+          <button class="header-btn" id="header-logo-home-btn">
+            Cloud Music
+          </button>
+        </span>
+        <nav class="main-nav">
+          <ul>
+            <li class="header-btn-container">
+              <button class="header-btn" id="header-home-btn">Home</button>
+            </li>
+            <li class="header-btn-container">
+              <button class="header-btn" id="header-feed-btn">Feed</button>
+            </li>
+            <li class="header-btn-container">
+              <button class="header-btn" id="header-search-btn">Search</button>
+            </li>
+            <li class="header-btn-container">
+              <button class="header-btn" id="header-library-btn">
+                Library
+              </button>
+            </li>
+          </ul>
+          <span class="searchbar-container">
+            <input type="text" class="header-searchbar" placeholder="Search" />
+          </span>
+        </nav>
       </header>
       <main>
         <section id="app"></section>
       </main>
-      <footer class="main-footer"></footer>
+      <footer class="main-footer">
+        <ul class="footer-nav">
+          <li>
+            <button class="footer-btn">Home</button>
+          </li>
+          <li>
+            <button class="footer-btn">Feed</button>
+          </li>
+          <li>
+            <button class="footer-btn">Search</button>
+          </li>
+          <li>
+            <button class="footer-btn">Library</button>
+          </li>
+          <li>
+            <button class="footer-btn">Profile</button>
+          </li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>

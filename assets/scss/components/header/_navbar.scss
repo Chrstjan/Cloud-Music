@@ -1,0 +1,50 @@
+@use "../../helpers/variables" as v;
+@use "../../helpers/mixins";
+@use "../../helpers/placeholders" as ph;
+@use "../../fonts/fonts";
+
+.main-nav {
+  @media (min-width: 1300px) {
+    @include mixins.flexBox(row, space-evenly, center, 0.3rem);
+  }
+
+  ul {
+    display: none;
+
+    @media (min-width: 1300px) {
+      @include mixins.flexBox(row, center, center, 0.1rem);
+      padding-right: 2rem;
+    }
+
+    li {
+      list-style-type: none;
+
+      #header-search-btn {
+        @media (min-width: 1300px) {
+          display: none;
+        }
+      }
+
+      .header-btn {
+        @extend %btn-to-header;
+        @include mixins.fontFamily("Manrope", 700, 17px);
+        color: v.$main-color-white;
+      }
+    }
+  }
+
+  .searchbar-container {
+    padding-left: 10rem;
+    .header-searchbar {
+      display: none;
+
+      @media (min-width: 1300px) {
+        position: sticky;
+        display: block;
+        width: 14vw;
+        padding: 0.3rem 0.3rem;
+        border-radius: 8px;
+      }
+    }
+  }
+}

@@ -1,14 +1,6 @@
-export const myFetchData = async (endpoint) => {
-  let response = "";
-
+export const myFetchData = async (endpoint, options = null) => {
   try {
-    response = await fetch(endpoint, {
-      method: 'GET', // or 'POST' if you are sending data
-      headers: {
-        'Content-Type': 'application/json',
-        // You can add other headers here if needed
-      },
-    });
+    const response = await fetch(endpoint, options);
     console.log(response);
     if (response.ok) {
       const json = await response.json();

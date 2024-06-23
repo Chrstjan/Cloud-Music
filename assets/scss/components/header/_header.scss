@@ -1,0 +1,43 @@
+@use "../../helpers/variables" as v;
+@use "../../helpers/mixins";
+@use "../../helpers/placeholders" as ph;
+@use "../../fonts/fonts";
+
+.main-header.hide-navigation {
+  display: none;
+}
+
+.main-header {
+  @include mixins.flexBox(row, flex-start, center);
+  background: v.$header-background-color;
+
+  @media (min-width: 1300px) {
+    padding-left: 14rem;
+  }
+
+  .logo-container {
+    @include mixins.flexBox(row, space-between, center, 0.6rem);
+    padding: 0.1rem 0.6rem;
+    #cloud-music-logo {
+      width: 30vw;
+      background: v.$main-color-light-orange;
+
+      @media (min-width: 1300px) {
+        width: 7vw;
+      }
+    }
+
+    #header-logo-home-btn {
+      @media (min-width: 1300px) {
+        display: none;
+      }
+    }
+
+    .header-btn {
+      @extend %btn-to-header;
+      color: v.$main-color-white;
+      @include mixins.fontFamily("Bebas Neue", 400, 28px);
+      padding-top: 1rem;
+    }
+  }
+}
