@@ -1,9 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-.landing-login .btn-container button {
+.main-footer .footer-nav li .footer-btn, .landing-login .btn-container button, .main-nav ul li .header-btn, .main-header .logo-container .header-btn {
   border: 0;
   background: transparent;
   text-align: center;
+}
+
+.main-header.hide-navigation {
+  display: none;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  background: #333333;
+}
+@media (min-width: 1300px) {
+  .main-header {
+    padding-left: 14rem;
+  }
+}
+.main-header .logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.1rem 0.6rem;
+}
+.main-header .logo-container #cloud-music-logo {
+  width: 30vw;
+  background: #ff6300;
+}
+@media (min-width: 1300px) {
+  .main-header .logo-container #cloud-music-logo {
+    width: 7vw;
+  }
+}
+@media (min-width: 1300px) {
+  .main-header .logo-container #header-logo-home-btn {
+    display: none;
+  }
+}
+.main-header .logo-container .header-btn {
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 1rem;
+}
+
+@media (min-width: 1300px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.3rem;
+  }
+}
+.main-nav ul {
+  display: none;
+}
+@media (min-width: 1300px) {
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    padding-right: 2rem;
+  }
+}
+.main-nav ul li {
+  list-style-type: none;
+}
+@media (min-width: 1300px) {
+  .main-nav ul li #header-search-btn {
+    display: none;
+  }
+}
+.main-nav ul li .header-btn {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 17px;
+  color: #ffffff;
+}
+.main-nav .searchbar-container {
+  padding-left: 10rem;
+}
+.main-nav .searchbar-container .header-searchbar {
+  display: none;
+}
+@media (min-width: 1300px) {
+  .main-nav .searchbar-container .header-searchbar {
+    position: -webkit-sticky;
+    position: sticky;
+    display: block;
+    width: 14vw;
+    padding: 0.3rem 0.3rem;
+    border-radius: 8px;
+  }
 }
 
 .landing-login {
@@ -82,6 +182,42 @@
 .landing-login .btn-container button:hover {
   cursor: pointer;
   scale: 1.2;
+}
+
+.main-footer.hide-navigation {
+  display: none;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  background: #333333;
+  padding-right: 2rem;
+  overflow-x: hidden;
+}
+@media (min-width: 1300px) {
+  .main-footer {
+    display: none;
+  }
+}
+.main-footer .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.main-footer .footer-nav li {
+  list-style-type: none;
+}
+.main-footer .footer-nav li .footer-btn {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 17px;
+  color: #ffffff;
 }
 
 html {

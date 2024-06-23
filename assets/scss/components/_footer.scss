@@ -1,0 +1,33 @@
+@use "../helpers/variables" as v;
+@use "../helpers/mixins";
+@use "../helpers/placeholders" as ph;
+@use "../fonts/fonts";
+
+.main-footer.hide-navigation {
+  display: none;
+}
+
+.main-footer {
+  @include mixins.flexBox(row, center, center, 0rem);
+  background: v.$header-background-color;
+  padding-right: 2rem;
+  overflow-x: hidden;
+
+  @media (min-width: 1300px) {
+    display: none;
+  }
+
+  .footer-nav {
+    @include mixins.flexBox(row, center, center, 0.6rem);
+
+    li {
+      list-style-type: none;
+
+      .footer-btn {
+        @extend %btn-to-header;
+        @include mixins.fontFamily("Manrope", 700, 17px);
+        color: v.$main-color-white;
+      }
+    }
+  }
+}
